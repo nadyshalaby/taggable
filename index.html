@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML HOVER SECTION</title>
+	<link rel="stylesheet" href="css/taggable.min.css">
+</head>
+<body>
+<form action="http://localhost/freesiana/test" action="get">
+	<select name="name[]" id="select" multiple>
+		<option value="4">Shady</option>
+		<option value="3">Ahmed</option>
+		<option value="2">Nady</option>
+		<option value="1">Mohamed</option>
+		<option value="0">Samir</option>
+	</select>
+	<input type="submit">
+</form>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.taggable.min.js"></script>
+	<script>
+		$("#select").taggable({
+			allowOtherWords : true, // default is false
+			searchByValue : false, // default is false
+			autoCompleteSearch : true, // default is true
+			autoCompleteSmartDisplay : true // default is true
+		});
+	</script>
+</body>
+</html>
